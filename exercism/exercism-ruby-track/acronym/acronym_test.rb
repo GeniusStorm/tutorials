@@ -30,4 +30,8 @@ class AcronymTest < Minitest::Test
   def test_consecutive_delimiters
     assert_equal "SIMUFTA", Acronym.abbreviate('Something - I made up from thin air')
   end
+
+  def test_consecutive_delimiters
+    assert_equal "TAM", Acronym.abbreviate("That's Awesome Man")
+  end
 end
